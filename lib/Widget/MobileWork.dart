@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:potrtfolio/Widget/MobileWorkBox.dart';
 
 class MobileWork extends StatefulWidget {
   @override
@@ -13,7 +14,7 @@ class _MobileWorkState extends State<MobileWork> {
     return ConstrainedBox(
       constraints: BoxConstraints.tightFor(
         width: size.width,
-        height: size.height * 1.7,
+        height: size.height * 1.3,
       ),
       child: Column(
         children: [
@@ -45,14 +46,14 @@ class _MobileWorkState extends State<MobileWork> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
+                                child: FaIcon(FontAwesomeIcons.houseLaptop,
                                     color: Colors.white),
                               ),
-                              CircleAvatar(
+                              /*CircleAvatar(
                                 backgroundColor: Colors.red,
                                 child: FaIcon(FontAwesomeIcons.freeCodeCamp,
                                     color: Colors.white),
-                              ),
+                              ),*/
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
                                 child: FaIcon(FontAwesomeIcons.laptopCode,
@@ -77,8 +78,8 @@ class _MobileWorkState extends State<MobileWork> {
               Expanded(
                   flex: 4,
                   child: Container(
-                    height: size.height * 1.7,
-                    child: MobileWork(),
+                    height: size.height * 1.2,
+                    child: MobileWorkBox(),
                   ))
             ],
           )

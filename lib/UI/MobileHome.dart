@@ -39,32 +39,9 @@ class _MobileHomeState extends State<MobileHome> {
     Method method = Method();
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xff0A192F),
-      endDrawer: Drawer(
-          elevation: 6.0,
-          child: Column(
-            children: [
-              UserAccountsDrawerHeader(
-                  currentAccountPicture: CircleAvatar(
-                    child: Icon(Icons.person),
-                  ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
-              ListTile(
-                title: Text("Share"),
-                leading: Icon(Icons.share),
-              ),
-              ListTile(
-                leading: Icon(Icons.group),
-                title: Text("About"),
-              ),
-              Expanded(
-                child: Text("Version 1.0.1"),
-              )
-            ],
-          )),
+      backgroundColor: Color(0xff183257),
       appBar: AppBar(
-        backgroundColor: Color(0xff0A192F),
+        backgroundColor: Color(0xff183257),
         elevation: 0.0,
         title: IconButton(
           icon: Icon(
@@ -95,7 +72,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.02,
               ),
               CustomText(
-                text: "Tushar Nikam.",
+                text: "Tuksa Emmanuel David.",
                 textsize: 52.0,
                 color: Color(0xffCCD6F6),
                 fontWeight: FontWeight.w900,
@@ -104,7 +81,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the Android and web.",
+                text: "Software Engineer | Flutter Developer",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -117,7 +94,8 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Nashik, IN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
+                      "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend proejcts using nodejs. Although "
+                "familiar with quite a few languages, I specialize in mobile app development, and I love my field.",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -143,7 +121,7 @@ class _MobileHomeState extends State<MobileHome> {
                   width: 160.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(4.0),
-                    color: Color(0xff0A192F),
+                    color: Color(0xff183257),
                   ),
                   child: MaterialButton(
                     onPressed: () {
@@ -213,7 +191,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
+                                "Hello! I'm Tuksa, a Software Engineer based in Abuja, NG.\n\nI enjoy writing codes and building things, whether that be mobile applications or backend.\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -255,7 +233,8 @@ class _MobileHomeState extends State<MobileHome> {
                                 technology(context, "Dart"),
                                 technology(context, "Flutter"),
                                 technology(context, "Firebase"),
-                                technology(context, "UI/UX (Adobe XD)"),
+                                technology(context, "Javascript"),
+                                technology(context, "NodeJS"),
                               ],
                             ),
                             Column(
@@ -263,9 +242,10 @@ class _MobileHomeState extends State<MobileHome> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 technology(context, "C/C++"),
-                                technology(context, "HTML, & (S)Css"),
-                                technology(context, "MYSQL"),
                                 technology(context, "Java"),
+                                technology(context, "Python"),
+                                technology(context, "Django"),
+                                technology(context, "Git - Github"),
                               ],
                             ),
                           ],
@@ -297,7 +277,7 @@ class _MobileHomeState extends State<MobileHome> {
                             margin: EdgeInsets.all(2.75),
                             height: size.height * 0.45,
                             width: size.width * 0.66,
-                            color: Color(0xff0A192F),
+                            color: Color(0xff183257),
                           ),
                         ),
                       ),
@@ -306,7 +286,7 @@ class _MobileHomeState extends State<MobileHome> {
                         width: size.width * 0.6,
                         child: Image(
                           fit: BoxFit.cover,
-                          image: AssetImage("images/pic1.jpeg"),
+                          image: AssetImage("images/pic1.gif"),
                         ),
                       ),
                       Container(
@@ -390,8 +370,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic9.jpg",
+                image: "images/assets/edit1.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://github.com/DeTuksa/personal_assistant");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS. Get live weather update and news update as well and also use voice commands to make calls and launch applications",
+                projectTitle: "Personal Assistant",
+                tech1: "Flutter",
+                tech2: "Dart",
+                tech3: "API",
               ),
 
               SizedBox(
@@ -399,8 +388,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic2.jpg",
+                image: "images/assets/edit2.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://github.com/DeTuksa/peddazz");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS with a lot of features including internet voice/video call, note taking, and chatting,",
+                projectTitle: "Peddazz",
+                tech1: "Flutter",
+                tech2: "Firebase",
+                tech3: "API",
               ),
 
               SizedBox(
@@ -408,8 +406,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic3.png",
+                image: "images/assets/edit3.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://github.com/DeTuksa/uber_clone");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS that clones the UI and functionality of uber app. Search location and make ride request. Also chat with driver and ability to update user data.",
+                projectTitle: "Uber Clone",
+                tech1: "Flutter",
+                tech2: "Firebase",
+                tech3: "API",
               ),
 
               SizedBox(
@@ -417,8 +424,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic4.jpg",
+                image: "images/assets/edit4.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://play.google.com/store/apps/details?id=com.asas.vc_mobile ");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS as a final year project. Used to watch and take online courses.",
+                projectTitle: "Exoclass",
+                tech1: "Flutter",
+                tech2: "Dart",
+                tech3: "Firebase",
               ),
 
               SizedBox(
@@ -426,8 +442,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic5.jpg",
+                image: "images/assets/edit5.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://github.com/DeTuksa/driver_clone");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS that clones the UI and functionality of uber driver app. Receive ride request and also chat with clients and ability to update user data.",
+                projectTitle: "Uber Driver Clone",
+                tech1: "Flutter",
+                tech2: "Firebase",
+                tech3: "API",
               ),
 
               SizedBox(
@@ -435,260 +460,17 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               MobileProject(
-                ontab: () {},
-                image: "images/pic6.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic7.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic8.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic10.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic11.jpg",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic102.gif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic104.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic105.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic106.png",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic107.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic108.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic109.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic110.jfif",
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic101.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.42,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic103.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic111.gif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic113.jfif"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic114.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic115.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic116.jfif"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic117.png"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic118.jpeg"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic119.jpeg"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic120.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic121.png"),
-                    ),
-                  ),
-                ],
+                image: "images/assets/edit6.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://play.google.com/store/apps/details?id=com.ghostcorp.scanage ");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS that allows a user search images and retrieve similar resulting images. Can also place orders for those items if available.",
+                projectTitle: "Scanage",
+                tech1: "Flutter",
+                tech2: "Dart",
+                tech3: "Firebase",
               ),
 
               SizedBox(
@@ -727,7 +509,7 @@ class _MobileHomeState extends State<MobileHome> {
                         alignment: WrapAlignment.center,
                         children: [
                           Text(
-                            "Although I'm currently looking for SDE-1 opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+                            "Feel free to reach out, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.4),
@@ -752,7 +534,7 @@ class _MobileHomeState extends State<MobileHome> {
                           width: size.width * 0.30,
                           alignment: Alignment.center,
                           decoration: BoxDecoration(
-                            color: Color(0xff0A192F),
+                            color: Color(0xff183257),
                             borderRadius: BorderRadius.circular(6.0),
                           ),
                           child: Padding(
@@ -787,7 +569,7 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://github.com/champ96k");
+                      method.launchURL("https://github.com/DeTuksa");
                     },
                   ),
                   IconButton(
@@ -798,7 +580,7 @@ class _MobileHomeState extends State<MobileHome> {
                     ),
                     onPressed: () {
                       method.launchURL(
-                          "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                          "https://www.linkedin.com/in/emmanuel-david-b5a49b158");
                     },
                   ),
                   IconButton(
@@ -808,17 +590,26 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL("https://twitter.com/champ_96k");
+                      method.launchURL("https://twitter.com/dt_emmy");
                     },
                   ),
                   IconButton(
-                    icon: Icon(
-                      Icons.mail,
+                      icon: Icon(
+                          Icons.phone
+                      ),
+                      color: Colors.white,
+                      iconSize: 15.0,
+                      onPressed: () {
+                        method.launchCaller();
+                      }),
+                  IconButton(
+                    icon: FaIcon(
+                      FontAwesomeIcons.medium,
                       color: Colors.white,
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchEmail();
+                      method.launchURL("https://medium.com/@dt_emmy");
                     },
                   )
                 ],
@@ -829,7 +620,7 @@ class _MobileHomeState extends State<MobileHome> {
               ),
 
               //Footer
-              Container(
+              /*Container(
                 alignment: Alignment.center,
                 height: MediaQuery.of(context).size.height / 6,
                 width: MediaQuery.of(context).size.width,
@@ -843,7 +634,7 @@ class _MobileHomeState extends State<MobileHome> {
                     fontSize: 14.0,
                   ),
                 ),
-              ),
+              ),*/
             ],
           ),
         ),

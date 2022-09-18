@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: Color(0xff0A192F),
+        backgroundColor: Color(0xff183257),
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
           primary: true,
@@ -146,12 +146,13 @@ class _HomePageState extends State<HomePage> {
                             width: size.height * 0.20,
                             alignment: Alignment.center,
                             decoration: BoxDecoration(
-                              color: Color(0xff0A192F),
+                              color: Color(0xff183257),
                               borderRadius: BorderRadius.circular(6.0),
                             ),
                             child: FlatButton(
                               hoverColor: Color(0xFF3E0449),
                               onPressed: () {
+                                //TODO:
                                 method.launchURL(
                                     "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
                               },
@@ -189,37 +190,30 @@ class _HomePageState extends State<HomePage> {
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method.launchURL("https://github.com/champ96k");
+                              method.launchURL("https://github.com/DeTuksa");
                             }),
                         IconButton(
                             icon: FaIcon(FontAwesomeIcons.twitter),
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method.launchURL("https://twitter.com/champ_96k");
+                              method.launchURL("https://twitter.com/dt_emmy");
                             }),
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.linkedin),
                           color: Color(0xffffA8B2D1),
                           onPressed: () {
                             method.launchURL(
-                                "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                                "https://www.linkedin.com/in/emmanuel-david-b5a49b158");
                           },
                           iconSize: 16.0,
                         ),
                         IconButton(
-                            icon: Icon(Icons.call),
+                            icon: FaIcon(FontAwesomeIcons.medium),
                             color: Color(0xffffA8B2D1),
                             iconSize: 16.0,
                             onPressed: () {
-                              method.launchCaller();
-                            }),
-                        IconButton(
-                            icon: Icon(Icons.mail),
-                            color: Color(0xffffA8B2D1),
-                            iconSize: 16.0,
-                            onPressed: () {
-                              method.launchEmail();
+                              method.launchURL("https://medium.com/@dt_emmy");
                             }),
                         Padding(
                           padding: const EdgeInsets.only(top: 16.0),
@@ -258,7 +252,7 @@ class _HomePageState extends State<HomePage> {
                                     height: 6.0,
                                   ),
                                   CustomText(
-                                    text: "Tushar Nikam.",
+                                    text: "Tuksa Emmanuel David.",
                                     textsize: 68.0,
                                     color: Color(0xffCCD6F6),
                                     fontWeight: FontWeight.w900,
@@ -268,7 +262,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   CustomText(
                                     text:
-                                        "I build things for the Android and web.",
+                                        "Software Engineer | Flutter Developer",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -279,7 +273,8 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a freelancer based in Nashik, IN specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
+                                        "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend proejcts using nodejs. Although "
+                                            "familiar with quite a few languages, I specialize in mobile app development, and I love my field.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
@@ -363,157 +358,100 @@ class _HomePageState extends State<HomePage> {
                                         height: size.height * 0.04,
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic9.jpg",
+                                        imagePath: "images/assets/edit1.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/WhatsApp--UI-Clone");
+                                              "https://github.com/DeTuksa/personal_assistant");
                                         },
                                         projectDesc:
-                                            "A Mobile app for both Android and IOS. View your Status, Chat, and call history. The purpose of this projcet is to Learn Flutter complex UI Design.",
-                                        projectTitle: "WhatsaApp UI Clone",
+                                            "A Mobile app for both Android and IOS. Get live weather update and news update as well and also use voice commands to make calls and launch applications",
+                                        projectTitle: "Personal Assistant",
                                         tech1: "Flutter",
                                         tech2: "Dart",
-                                        tech3: "Flutter UI",
+                                        tech3: "API",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic2.jpg",
+                                        imagePath: "images/assets/edit2.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Blog-App-using-Firebase");
+                                              "https://github.com/DeTuksa/peddazz");
                                         },
                                         projectDesc:
-                                            "A blog application using Flutter and firebase, In this project implement Firebase CURD operation, User can add post as well see all the post.",
-                                        projectTitle: "Blog Application",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
+                                        "A Mobile app for both Android and IOS with a lot of features including internet voice/video call, note taking, and chatting,",
+                                        projectTitle: "Peddazz",
+                                        tech1: "Flutter",
+                                        tech2: "Firebase",
+                                        tech3: "API",
+                                      ),
+
+                                      FeatureProject(
+                                        imagePath: "images/assets/edit3.png",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://github.com/DeTuksa/uber_clone");
+                                        },
+                                        projectDesc:
+                                        "A Mobile app for both Android and IOS that clones the UI and functionality of uber app. Search location and make ride request. Also chat with driver and ability to update user data.",
+                                        projectTitle: "Uber Clone",
+                                        tech1: "Flutter",
+                                        tech2: "Firebase",
+                                        tech3: "API",
+                                      ),
+
+                                      FeatureProject(
+                                        imagePath: "images/assets/edit4.png",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://play.google.com/store/apps/details?id=com.asas.vc_mobile ");
+                                        },
+                                        projectDesc:
+                                        "A Mobile app for both Android and IOS as a final year project. Used to watch and take online courses.",
+                                        projectTitle: "Exoclass",
+                                        tech1: "Flutter",
+                                        tech2: "Dart",
                                         tech3: "Firebase",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic3.png",
+                                        imagePath: "images/assets/edit5.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/Wallpaper-Hub-using-Flutter");
+                                              "https://github.com/DeTuksa/driver_clone");
                                         },
                                         projectDesc:
-                                            "A Wallpaper application Using Pixel API, to show more than 5k+ images. User can Search any images, as well as Download and directly set Image as Wallpaper.",
-                                        projectTitle: "Wallpaper Hub",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
+                                        "A Mobile app for both Android and IOS that clones the UI and functionality of uber driver app. Receive ride request and also chat with clients and ability to update user data.",
+                                        projectTitle: "Uber Driver Clone",
+                                        tech1: "Flutter",
+                                        tech2: "Firebase",
                                         tech3: "API",
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic4.jpg",
+                                        imagePath: "images/assets/edit6.png",
                                         ontab: () {
                                           method.launchURL(
-                                              "https://github.com/champ96k/coronavirus-tracker-app");
+                                              "https://play.google.com/store/apps/details?id=com.ghostcorp.scanage ");
                                         },
                                         projectDesc:
-                                            "A Flutter app to track Coronavirus outbreak, Current statistics of global total confirmed, deaths, recovered cases, Health news, coronavirus safety information and many more.",
-                                        projectTitle: "Covid19 Tracker",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
-                                      //ff
-                                      FeatureProject(
-                                        imagePath: "images/pic5.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Gender-Predictor-Flutter-App");
-                                        },
-                                        projectDesc:
-                                            "In this app you can predict the gender with the help of name and probability of that name.",
-                                        projectTitle: "Gender Predictor",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic6.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/News-Hours-Apps-Using-Rest-API");
-                                        },
-                                        projectDesc:
-                                            "complete news Application using rest API API link- https://newsapi.org, you can get all news.",
-                                        projectTitle: "News Hour",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic7.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-wallpaper-App-using-Firebase");
-                                        },
-                                        projectDesc:
-                                            "Flutter Wallpaper application using firebase as a backend with a cool animation, it show the all images that are store in firebase firestore.",
-                                        projectTitle: "Wallpaper App",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
+                                        "A Mobile app for both Android and IOS that allows a user search images and retrieve similar resulting images. Can also place orders for those items if available.",
+                                        projectTitle: "Scanage",
+                                        tech1: "Flutter",
+                                        tech2: "Dart",
                                         tech3: "Firebase",
                                       ),
 
-                                      FeatureProject(
-                                        imagePath: "images/pic8.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Weather-Application");
-                                        },
-                                        projectDesc:
-                                            "Weather app. This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets. Widgets for Android: The weather radar widget free and clock widget weather with beautiful style.",
-                                        projectTitle: "Weather Application",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "API",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic10.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://pub.dev/packages/flutter_onboarding_screen");
-                                        },
-                                        projectDesc:
-                                            "A flutter package which help developer in creating a onboarding screens of their app.",
-                                        projectTitle:
-                                            "Flutter Onboarding Screen Package",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Dart Package",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic11.jpg",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Neumorphic-Calculator-UI");
-                                        },
-                                        projectDesc:
-                                            "To explore the flutter Neumorphic design",
-                                        projectTitle: "Neumorphic Design",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      MainTiitle(
+                                      /*MainTiitle(
                                         number: "0.4",
                                         text: "Open Source Project",
-                                      ),
+                                      ),*/
 
                                       SizedBox(
                                         height: size.height * 0.04,
                                       ),
 
-                                      //other Projects
-                                      Container(
+                                      ///other Projects
+                                      /*Container(
                                         height: size.height * 0.86,
                                         width: size.width - 100,
                                         child: Column(
@@ -579,10 +517,10 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                           ],
                                         ),
-                                      ),
+                                      ),*/
 
-                                      //other Projects
-                                      Container(
+                                      ///other Projects
+                                      /*Container(
                                         height: size.height * 0.86,
                                         width: size.width - 100,
                                         child: Column(
@@ -648,10 +586,10 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                           ],
                                         ),
-                                      ),
+                                      ),*/
 
-                                      //other Projects
-                                      Container(
+                                      ///other Projects
+                                      /*Container(
                                         height: size.height * 0.86,
                                         width: size.width - 100,
                                         child: Column(
@@ -717,152 +655,13 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                           ],
                                         ),
-                                      ),
+                                      ),*/
 
-                                      FeatureProject(
-                                        imagePath: "images/pic102.gif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Web-SolMusic-Landing-Page");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "SolMusic",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Web",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic104.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Sign Up and Sign In",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic105.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Sign up and Sign in",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic106.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flowers-Shop-Mobile-App-Store");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Online Flowers Shop",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic107.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Food-Delivery-App-UI");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Food delivery App",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic108.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Plant-Shop-UI-Design");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Plant Nursery App",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic109.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Foody-App-UI-Design");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Foody",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic110.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Online-Food-Order-App-UI");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Online Food order",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic501.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Ganpati-Bappa-");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Ganpati Bappa",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter Animation",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic506.png",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Netflix-Web-Clone-Using-Flutter");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Flutter Netflix Web",
-                                        tech1: "Dart",
-                                        tech2: "Flutter Wen",
-                                        tech3: "Flutter UI",
-                                      ),
                                     ],
                                   )),
 
                               SizedBox(
-                                height: 6.0,
+                                height: 2.0,
                               ),
 
                               //Get In Touch
@@ -901,6 +700,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
+                                                //TODO
                                                 "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
@@ -932,7 +732,7 @@ class _HomePageState extends State<HomePage> {
                                                 width: size.width * 0.10,
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
-                                                  color: Color(0xff0A192F),
+                                                  color: Color(0xff183257),
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           6.0),
@@ -956,8 +756,8 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
 
-                                    //Footer
-                                    Container(
+                                    ///Footer
+                                    /*Container(
                                       alignment: Alignment.center,
                                       height:
                                           MediaQuery.of(context).size.height /
@@ -966,14 +766,14 @@ class _HomePageState extends State<HomePage> {
                                           100,
                                       //color: Colors.white,
                                       child: Text(
-                                        "Designed & Built by Tushar Nikam 💙 Flutter",
+                                        "Designed & Built by Tuksa Emmanuel",
                                         style: TextStyle(
                                           color: Colors.white.withOpacity(0.4),
                                           letterSpacing: 1.75,
                                           fontSize: 14.0,
                                         ),
                                       ),
-                                    ),
+                                    ),*/
                                   ],
                                 ),
                               ),
@@ -993,7 +793,7 @@ class _HomePageState extends State<HomePage> {
                         RotatedBox(
                           quarterTurns: 45,
                           child: Text(
-                            "tusharnikam2021@gmail.com",
+                            "emmydave414@gmail.com",
                             style: TextStyle(
                               color: Colors.grey.withOpacity(0.6),
                               letterSpacing: 3.0,

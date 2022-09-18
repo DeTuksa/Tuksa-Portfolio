@@ -77,14 +77,14 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                          "Hello! I'm Tuksa, a Software Engineer based in Abuja, NG.\n\nI enjoy writing codes and building things, whether that be mobile applications or backend.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
                     CustomText(
                       text:
-                          "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n\n",
+                          "I am a Computer Engineering graduate from the Federal University of Technology Minna.\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
@@ -113,7 +113,8 @@ class About extends StatelessWidget {
                             technology(context, "Dart"),
                             technology(context, "Flutter"),
                             technology(context, "Firebase"),
-                            technology(context, "UI/UX (Adobe Xd)"),
+                            technology(context, "Javascript"),
+                            technology(context, "NodeJS"),
                           ],
                         ),
                       ),
@@ -122,9 +123,10 @@ class About extends StatelessWidget {
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "C/C++, Java."),
-                            technology(context, "HTML & (S)CSS"),
-                            technology(context, "MYSQL"),
+                            technology(context, "C/C++"),
+                            technology(context, "Java"),
+                            technology(context, "Python"),
+                            technology(context, "Django"),
                             technology(context, "Git - Github"),
                           ],
                         ),
@@ -221,7 +223,7 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
             color: Colors.black54,
             child: Image(
               fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpeg"),
+              image: AssetImage("images/pic1.gif"),
             ),
           ),
           Container(

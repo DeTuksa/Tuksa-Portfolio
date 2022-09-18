@@ -24,7 +24,7 @@ class FeatureProject extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      height: size.height / 0.999,
+      height: size.height * 0.9,
       width: size.width - 100,
       //color: Colors.tealAccent,
       child: Column(

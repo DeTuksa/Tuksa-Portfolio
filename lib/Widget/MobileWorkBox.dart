@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:potrtfolio/Widget/work_custom_data.dart';
 
-class MobileWork extends StatelessWidget {
+class MobileWorkBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -9,37 +9,30 @@ class MobileWork extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         WorkCustomData(
-          title: "Sandip Institute Of Engineering & Management Nashik",
+          title: "Ehealth4Everyone",
           subTitle:
-              "I am currently pursuing Bachelor's Degree in Computer Science and Engineering \nat Savitribai Phule Pune University",
-          duration: "2016 - Present",
+              "Java Application Developer (Internship)\nWorked as a java developer intern and liased with the product manager and team lead on the various projects at hand.",
+          duration: "July 2019 - Decemver 2019",
         ),
         WorkCustomData(
-          title: "Flutter + Dart Development Winter Bootcamp",
+          title: "Demz Analytics",
           subTitle:
-              "The Complete 2020 Flutter + Dart Winter Development Bootcamp at LCO Training Center,\nJaipur, Rajasthan (302017), Covering all the fundamental concepts for Flutter development",
-          duration: "Dec - 2019 to Feb - 2020",
+              "Flutter Mobile Developer (Contract)\nWorked with a team of developers to deliver a fluid mobile application for the company. Involved in writing and performing test on the mobile application.",
+          duration: "April 2021 - June 2021",
         ),
         WorkCustomData(
-          title:
-              "Freelancer - Flutter | Dart Mobile App Developer | UI - UX Designer",
+          title: "EF Networks Ltd",
           subTitle:
-              "Flutter Developer and experienced programmer with an extensive history of designing and coding \nsolutions. Skilled in Google’s Flutter/Dart, Firebase App and Web development on a global scale. If you \nare looking for someone that you can trust that will complete your app on time and on budget, then \nplease contact me. I have been developing software for 1+ years and take pride in everything I do.",
-          duration: "Oct - 2019 to Nov - 2020",
+              "Flutter Mobile Developer (Full Time)\nTook on the task of building two mobile applications for the company. Liased with the designer to deliver design requirements and also the team lead to ensure the success of the development. Was responsible for writing and performing test.",
+          duration: "September 2021 - March 2022",
         ),
         WorkCustomData(
-          title: "Mentor at Contributor's Hack, 2020",
+          title: "Matador Trust Limited",
           subTitle:
-              "Working as a mentor in HakinCode organization for Flutter CodeAsylums application \n where I can utilize my skills and be an asset to the organization",
-          duration: "Sep 2020 - Oct 2020",
+              "Flutter Mobile Developer\nWorked with a team of developers in a startup to develop the MVP and other versions of the mobile application. Responsible for liasing with the CTO and team members to deliver a fluid application.",
+          duration: "November 2021 - April 2022",
         ),
-        WorkCustomData(
-          title: "Flutter Intern at Mind Sports League | Gurgaon In",
-          subTitle:
-              "Building world class Poker Learning platform. Poker Sports League is India’s first poker league is to sportify the game of poker through a unique, team based format",
-          duration: "Nov - 2020 Present",
-        ),
-      ],
+      ].reversed.toList(),
     );
   }
 }
