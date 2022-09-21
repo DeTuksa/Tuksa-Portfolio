@@ -32,7 +32,7 @@ class _WorkState extends State<Work> {
                 width: 12.0,
               ),
               CustomText(
-                text: "Where I've Worked",
+                text: "Work Experience",
                 textsize: 26.0,
                 color: Color(0xffCCD6F6),
                 fontWeight: FontWeight.w700,

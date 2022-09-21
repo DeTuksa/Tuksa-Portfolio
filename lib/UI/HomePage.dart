@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: Color(0xff183257),
+        backgroundColor: Color(0xFF061521),
         body: SingleChildScrollView(
           physics: ScrollPhysics(),
           primary: true,
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                               onPressed: () {
                                 //TODO:
                                 method.launchURL(
-                                    "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
+                                    "https://drive.google.com/file/d/1aDrggcDF-dpiJwxdUc1w9-qq9rFT1u5x/view?usp=sharing");
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -273,7 +273,7 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend proejcts using nodejs. Although "
+                                        "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend projects using nodejs. Although "
                                             "familiar with quite a few languages, I specialize in mobile app development, and I love my field.",
                                         style: TextStyle(
                                           color: Colors.grey,
@@ -352,7 +352,7 @@ class _HomePageState extends State<HomePage> {
                                     children: [
                                       MainTiitle(
                                         number: "0.3",
-                                        text: "Some Things I've Built",
+                                        text: "Projects",
                                       ),
                                       SizedBox(
                                         height: size.height * 0.04,
@@ -701,7 +701,7 @@ class _HomePageState extends State<HomePage> {
                                             children: [
                                               Text(
                                                 //TODO
-                                                "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
+                                                "Feel free to reach out, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white

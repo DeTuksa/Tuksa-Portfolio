@@ -84,18 +84,21 @@ class About extends StatelessWidget {
                     ),
                     CustomText(
                       text:
-                          "I am a Computer Engineering graduate from the Federal University of Technology Minna.\n\n",
+                          "I am a Computer Engineering graduate from the Federal University of Technology Minna.",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
-                    CustomText(
-                      text:
-                          "Here are a few technologies I've been working with recently:\n\n",
-                      textsize: 16.0,
-                      color: Color(0xff828DAA),
-                      // fontWeight: FontWeight.w500,
-                      letterSpacing: 0.75,
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: CustomText(
+                        text:
+                            "\n\nTech Stack:\n\n",
+                        textsize: 16.0,
+                        color: Color(0xff828DAA),
+                        // fontWeight: FontWeight.w500,
+                        letterSpacing: 0.75,
+                      ),
                     ),
                   ],
                 ),

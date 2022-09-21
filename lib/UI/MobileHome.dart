@@ -39,9 +39,9 @@ class _MobileHomeState extends State<MobileHome> {
     Method method = Method();
     final Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xff183257),
+      backgroundColor: Color(0xFF061521),
       appBar: AppBar(
-        backgroundColor: Color(0xff183257),
+        backgroundColor: Color(0xFF061521),
         elevation: 0.0,
         title: IconButton(
           icon: Icon(
@@ -94,7 +94,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend proejcts using nodejs. Although "
+                      "I have 3+ years experience building mobile applications using the flutter framework and I have also worked on other backend projects using nodejs. Although "
                 "familiar with quite a few languages, I specialize in mobile app development, and I love my field.",
                       style: TextStyle(
                         color: Colors.grey,
@@ -125,11 +125,12 @@ class _MobileHomeState extends State<MobileHome> {
                   ),
                   child: MaterialButton(
                     onPressed: () {
-                      method.launchEmail();
+                      method.launchURL(
+                          "https://drive.google.com/file/d/1aDrggcDF-dpiJwxdUc1w9-qq9rFT1u5x/view?usp=sharing");
                     },
                     hoverColor: Colors.green,
                     child: Text(
-                      "Get In Touch",
+                      "Resume",
                       style: TextStyle(
                         color: Color(0xff64FFDA),
                         letterSpacing: 2.75,
@@ -191,7 +192,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Tuksa, a Software Engineer based in Abuja, NG.\n\nI enjoy writing codes and building things, whether that be mobile applications or backend.\n",
+                                "Hello! I'm Tuksa, a Software Engineer based in Abuja, NG.\n\nI enjoy writing codes and building things, whether that be mobile applications or backend.",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -199,19 +200,22 @@ class _MobileHomeState extends State<MobileHome> {
                           ),
                           CustomText(
                             text:
-                                "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n",
+                                "I am a Computer Engineering graduate from the Federal University of Technology Minna.\n\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
                             letterSpacing: 0.75,
                           ),
-                          CustomText(
-                            text:
-                                "Here are a few technologies I've been working with recently:\n\n",
-                            textsize: 16.0,
-                            color: Color(0xff828DAA),
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 0.75,
+                          Align(
+                            alignment: Alignment.topLeft,
+                            child: CustomText(
+                              text:
+                                  "\n\nTech Stack:\n\n",
+                              textsize: 16.0,
+                              color: Color(0xff828DAA),
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.75,
+                            ),
                           ),
                         ],
                       ),
@@ -313,7 +317,7 @@ class _MobileHomeState extends State<MobileHome> {
                     width: 12.0,
                   ),
                   CustomText(
-                    text: "Where I've Worked",
+                    text: "Work Experience",
                     textsize: 26.0,
                     color: Color(0xffCCD6F6),
                     fontWeight: FontWeight.w700,
@@ -349,7 +353,7 @@ class _MobileHomeState extends State<MobileHome> {
                     width: 12.0,
                   ),
                   CustomText(
-                    text: "Some Things I've Built",
+                    text: "Projects",
                     textsize: 26.0,
                     color: Color(0xffCCD6F6),
                     fontWeight: FontWeight.w700,
@@ -522,29 +526,34 @@ class _MobileHomeState extends State<MobileHome> {
                       SizedBox(
                         height: size.height * 0.07,
                       ),
-                      Card(
-                        elevation: 4.0,
-                        color: Color(0xff64FFDA),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(6.0),
-                        ),
-                        child: Container(
-                          margin: EdgeInsets.all(0.85),
-                          height: size.height * 0.10,
-                          width: size.width * 0.30,
-                          alignment: Alignment.center,
-                          decoration: BoxDecoration(
-                            color: Color(0xff183257),
+                      GestureDetector(
+                        onTap: () {
+                          method.launchEmail();
+                        },
+                        child: Card(
+                          elevation: 4.0,
+                          color: Color(0xff64FFDA),
+                          shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(6.0),
                           ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0,
+                          child: Container(
+                            margin: EdgeInsets.all(0.85),
+                            height: size.height * 0.10,
+                            width: size.width * 0.30,
+                            alignment: Alignment.center,
+                            decoration: BoxDecoration(
+                              color: Color(0xff183257),
+                              borderRadius: BorderRadius.circular(6.0),
                             ),
-                            child: Text(
-                              "Say Hello",
-                              style: TextStyle(
-                                color: Color(0xff64FFDA),
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Text(
+                                "Say Hello",
+                                style: TextStyle(
+                                  color: Color(0xff64FFDA),
+                                ),
                               ),
                             ),
                           ),
@@ -593,15 +602,6 @@ class _MobileHomeState extends State<MobileHome> {
                       method.launchURL("https://twitter.com/dt_emmy");
                     },
                   ),
-                  IconButton(
-                      icon: Icon(
-                          Icons.phone
-                      ),
-                      color: Colors.white,
-                      iconSize: 15.0,
-                      onPressed: () {
-                        method.launchCaller();
-                      }),
                   IconButton(
                     icon: FaIcon(
                       FontAwesomeIcons.medium,
