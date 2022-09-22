@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "portfolio-57e47"
+  },
+  "targets": {
+    "portfolio-57e47": {
+      "hosting": {
+        "dtemmy": [
+          "dtemmy"
+        ]
+      }
+    }
   }
 }

@@ -30,7 +30,7 @@ class MobileWorkBox extends StatelessWidget {
           title: "Matador Trust Limited",
           subTitle:
               "Flutter Mobile Developer\nWorked with a team of developers in a startup to develop the MVP and other versions of the mobile application. Responsible for liasing with the CTO and team members to deliver a fluid application.",
-          duration: "November 2021 - April 2022",
+          duration: "November 2021 - Present",
         ),
       ].reversed.toList(),
     );
