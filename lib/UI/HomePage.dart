@@ -358,6 +358,33 @@ class _HomePageState extends State<HomePage> {
                                         height: size.height * 0.04,
                                       ),
                                       FeatureProject(
+                                        imagePath: "images/assets/recipedia.png",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://play.google.com/store/apps/details?id=com.asas.daisy_recipe");
+                                        },
+                                        projectDesc:
+                                        "A recipe app that allows the user fetch both food recipes as well as cocktail recipes. Users can view details of a selected recipe"
+                                            ", ingredients and instructions. Users can also search for recipes of their choice.",
+                                        projectTitle: "Recipedia",
+                                        tech1: "Flutter",
+                                        tech2: "Dart",
+                                        tech3: "API",
+                                      ),
+                                      FeatureProject(
+                                        imagePath: "images/assets/recipeAPI.JPG",
+                                        ontab: () {
+                                          method.launchURL(
+                                              "https://github.com/DeTuksa/Recipe-API");
+                                        },
+                                        projectDesc:
+                                        "API project for the recipedia app. This project contains all the api's used by the mobile app.",
+                                        projectTitle: "Recipedia API",
+                                        tech1: "Javascript",
+                                        tech2: "Nodejs",
+                                        tech3: "API",
+                                      ),
+                                      FeatureProject(
                                         imagePath: "images/assets/edit1.png",
                                         ontab: () {
                                           method.launchURL(

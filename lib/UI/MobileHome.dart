@@ -372,6 +372,38 @@ class _MobileHomeState extends State<MobileHome> {
               SizedBox(
                 height: size.height * 0.07,
               ),
+              MobileProject(
+                image: "images/assets/recipeAPI.JPG",
+                ontab: () {
+                  method.launchURL(
+                      "https://github.com/DeTuksa/Recipe-API");
+                },
+                projectDesc:
+                "API project for the recipedia app. This project contains all the api's used by the mobile app.",
+                projectTitle: "Recipedia API",
+                tech1: "Javascript",
+                tech2: "Nodejs",
+                tech3: "API",
+              ),
+              SizedBox(
+                height: size.height * 0.07,
+              ),
+              MobileProject(
+                image: "images/assets/edit4.png",
+                ontab: () {
+                  method.launchURL(
+                      "https://play.google.com/store/apps/details?id=com.asas.vc_mobile ");
+                },
+                projectDesc:
+                "A Mobile app for both Android and IOS as a final year project. Used to watch and take online courses.",
+                projectTitle: "Exoclass",
+                tech1: "Flutter",
+                tech2: "Dart",
+                tech3: "Firebase",
+              ),
+              SizedBox(
+                height: size.height * 0.07,
+              ),
 
               MobileProject(
                 image: "images/assets/edit1.png",
@@ -426,19 +458,19 @@ class _MobileHomeState extends State<MobileHome> {
               SizedBox(
                 height: size.height * 0.07,
               ),
-
               MobileProject(
-                image: "images/assets/edit4.png",
+                image: "images/assets/recipedia.png",
                 ontab: () {
                   method.launchURL(
-                      "https://play.google.com/store/apps/details?id=com.asas.vc_mobile ");
+                      "https://play.google.com/store/apps/details?id=com.asas.daisy_recipe");
                 },
                 projectDesc:
-                "A Mobile app for both Android and IOS as a final year project. Used to watch and take online courses.",
-                projectTitle: "Exoclass",
+                "A recipe app that allows the user fetch both food recipes as well as cocktail recipes. Users can view details of a selected recipe"
+                    ", ingredients and instructions. Users can also search for recipes of their choice.",
+                projectTitle: "Recipedia",
                 tech1: "Flutter",
                 tech2: "Dart",
-                tech3: "Firebase",
+                tech3: "API",
               ),
 
               SizedBox(
